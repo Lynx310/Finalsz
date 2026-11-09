@@ -12,6 +12,7 @@
     <body>
         <input aria-label="Open shopping cart" class="css-switch" id="cart-open" type="checkbox">
         <input aria-label="Open checkout" class="css-switch" id="checkout-open" type="checkbox">
+        <input aria-label="Show order confirmation" class="css-switch" id="order-placed" type="checkbox">
 
         <!-- TOP ANNOUNCEMENT BAR: short store update shown above the navigation. -->
 
@@ -393,7 +394,7 @@
                 <label aria-label="Close checkout" class="static-modal-close" for="checkout-open">&times;</label>
                 <p class="eyebrow">ALMOST THERE!</p>
                 <h2>Complete Your Order</h2>
-                <p class="checkout-intro">Please provide your details so the shop can review your order inquiry.</p>
+                <p class="checkout-intro">Please provide your details for your order.</p>
                 <form action="#checkout-open" class="static-checkout-form" method="get">
                     <div class="checkout-section">
                         <h3>1. Customer Information</h3>
@@ -501,9 +502,17 @@
                             <textarea name="orderNotes" placeholder="Write your preferred flavor, design, message on cake, or other requests here." rows="3"></textarea>
                         </label>
                     </div>
-                    <p class="static-form-note">Static demonstration only: this form does not send or save an order.</p>
-                    <button class="primary-button" type="submit">Review My Order</button>
+                    <p class="static-form-note">CSS-only demo: this form does not send or save an order.</p>
+                    <label class="primary-button place-order-trigger" for="order-placed">Place Order</label>
                 </form>
+            </div>
+        </section>
+        <section aria-label="Order confirmation" aria-modal="true" class="static-order-success" role="dialog">
+            <div class="static-order-success-dialog">
+                <span aria-hidden="true" class="order-success-check">&check;</span>
+                <h2>Your order has been placed!</h2>
+                <p>Your order has been placed successfully.</p>
+                <label class="primary-button order-success-close" for="order-placed">Close Window</label>
             </div>
         </section>
         <section aria-label="Cake (6 &times; 4) details" class="static-product-modal" id="product-details-1">
@@ -518,7 +527,7 @@
                     <p class="static-modal-price">₱879</p>
                     <p>Our classic celebration cake. Price starts at ₱879; final pricing may depend on design and customization.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -534,7 +543,7 @@
                     <p class="static-modal-price">₱1199</p>
                     <p>A bigger celebration cake for sharing. Price starts at ₱1,199; final pricing may depend on design and customization.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -550,7 +559,7 @@
                     <p class="static-modal-price">₱349</p>
                     <p>A petite cake that's perfect for intimate celebrations and sweet surprises.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -566,7 +575,7 @@
                     <p class="static-modal-price">₱799</p>
                     <p>A dozen freshly made cupcakes, perfect for sharing.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -582,7 +591,7 @@
                     <p class="static-modal-price">₱175</p>
                     <p>Rich chocolate crinkles with creamcheese. Sold per loaf.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -598,7 +607,7 @@
                     <p class="static-modal-price">₱210</p>
                     <p>Soft red velvet crinkles with creamcheese. Sold per loaf.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -614,7 +623,7 @@
                     <p class="static-modal-price">₱185</p>
                     <p>Ube-flavored crinkles with creamcheese. Sold per loaf.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -630,7 +639,7 @@
                     <p class="static-modal-price">₱235</p>
                     <p>Matcha crinkles with creamcheese. Sold per loaf.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -646,7 +655,7 @@
                     <p class="static-modal-price">₱210</p>
                     <p>Chocolate cookies with walnuts. Box of 4.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -662,7 +671,7 @@
                     <p class="static-modal-price">₱210</p>
                     <p>Oreo red velvet cookies. Box of 4.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -678,7 +687,7 @@
                     <p class="static-modal-price">₱210</p>
                     <p>Rich chocolate brownies. Sold per order.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -694,7 +703,7 @@
                     <p class="static-modal-price">₱180</p>
                     <p>Classic tiramisu dessert. Sold per tub.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -710,7 +719,7 @@
                     <p class="static-modal-price">₱180</p>
                     <p>Moist and comforting banana loaf. Sold per loaf.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -726,7 +735,7 @@
                     <p class="static-modal-price">₱180</p>
                     <p>Sweet cinnamon bread. Sold per loaf.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -742,7 +751,7 @@
                     <p class="static-modal-price">₱250</p>
                     <p>Soft ensymada topped with creamcheese. Sold per loaf.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -758,7 +767,7 @@
                     <p class="static-modal-price">₱270</p>
                     <p>Ube ensymada topped with creamcheese. Sold per loaf.</p>
                     <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
-                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                    <a class="primary-button static-close-link" href="#menu-section">Add To Cart</a>
                 </div>
             </div>
         </section>
@@ -794,7 +803,7 @@
 
         <div class="account-modal" id="login">
             <div class="account-content">
-                <img alt="Purrfectly Bakes Logo" class="account-logo" src="pictures/logo.jpg">
+                <img alt="Purrfectly Bakes Logo" class="account-logo" src="pictures/Logo.jpg">
                 <h2>Welcome Back!</h2>
                 <form action="#Welcome">
                     <div class="account-input-group">

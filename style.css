@@ -868,7 +868,8 @@ nav a:hover { color: var(--accent); }
     text-decoration: none;
 }
 .static-cart-panel,
-.static-checkout-panel {
+.static-checkout-panel,
+.static-order-success {
     display: none;
     position: fixed;
     inset: 0;
@@ -881,6 +882,8 @@ nav a:hover { color: var(--accent); }
 #checkout-open:checked ~ .static-checkout-panel {
     display: flex;
 }
+#order-placed:checked ~ .static-order-success { display: flex; }
+#order-placed:checked ~ .static-checkout-panel { display: none; }
 .static-overlay {
     position: absolute;
     inset: 0;
@@ -916,6 +919,7 @@ nav a:hover { color: var(--accent); }
     font-family: Georgia, serif;
 }
 .static-modal-close {
+    
     display: grid;
     place-items: center;
     width: 36px;
@@ -972,6 +976,42 @@ nav a:hover { color: var(--accent); }
 .static-checkout-dialog .payment-note { display: block; margin-top: 9px; color: #806B5B; font-size: 12px; line-height: 1.5; }
 .static-checkout-dialog .static-form-note { margin: 18px 0 10px; padding: 10px; border-radius: 7px; background: #F7E6D1; }
 .static-checkout-dialog button { width: 100%; }
+.static-checkout-dialog .place-order-trigger { display: block; width: 100%; text-align: center; color: var(--white); cursor: pointer; }
+.static-order-success { z-index: 3200; padding: 18px; }
+.static-order-success::before {
+    position: absolute;
+    inset: 0;
+    background: rgba(35, 20, 12, .68);
+    content: "";
+}
+.static-order-success-dialog {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 430px);
+    padding: 32px;
+    border: 1px solid #E0D2C3;
+    border-radius: 14px;
+    background: #FFEEDE;
+    color: #482313;
+    text-align: center;
+    box-shadow: 0 18px 48px rgba(42, 26, 16, .24);
+}
+.order-success-check {
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #438A58;
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+}
+.static-order-success-dialog h2 { margin-bottom: 10px; font-family: Georgia, serif; }
+.static-order-success-dialog p { margin-bottom: 22px; color: #806B5B; font-size: 14px; line-height: 1.6; }
+.order-success-close { display: block; background: #C94136; }
+.order-success-close:hover { background: #A92F26; color: #fff; }
 .static-product-modal {
     display: none;
     position: fixed;
