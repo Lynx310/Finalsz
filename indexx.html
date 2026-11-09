@@ -12,6 +12,7 @@
     <body>
         <input aria-label="Open shopping cart" class="css-switch" id="cart-open" type="checkbox">
         <input aria-label="Open checkout" class="css-switch" id="checkout-open" type="checkbox">
+        <input aria-label="Show order confirmation" class="css-switch" id="order-placed" type="checkbox">
 
         <!-- TOP ANNOUNCEMENT BAR: short store update shown above the navigation. -->
 
@@ -393,7 +394,7 @@
                 <label aria-label="Close checkout" class="static-modal-close" for="checkout-open">&times;</label>
                 <p class="eyebrow">ALMOST THERE!</p>
                 <h2>Complete Your Order</h2>
-                <p class="checkout-intro">Please provide your details so the shop can review your order inquiry.</p>
+                <p class="checkout-intro">Please provide your details for your order.</p>
                 <form action="#checkout-open" class="static-checkout-form" method="get">
                     <div class="checkout-section">
                         <h3>1. Customer Information</h3>
@@ -501,9 +502,17 @@
                             <textarea name="orderNotes" placeholder="Write your preferred flavor, design, message on cake, or other requests here." rows="3"></textarea>
                         </label>
                     </div>
-                    <p class="static-form-note">Static demonstration only: this form does not send or save an order.</p>
-                    <button class="primary-button" type="submit">Review My Order</button>
+                    <p class="static-form-note">CSS-only demo: this form does not send or save an order.</p>
+                    <label class="primary-button place-order-trigger" for="order-placed">Place Order</label>
                 </form>
+            </div>
+        </section>
+        <section aria-label="Order confirmation" aria-modal="true" class="static-order-success" role="dialog">
+            <div class="static-order-success-dialog">
+                <span aria-hidden="true" class="order-success-check">&check;</span>
+                <h2>Your order has been placed!</h2>
+                <p>Your order has been placed successfully.</p>
+                <label class="primary-button order-success-close" for="order-placed">Close Window</label>
             </div>
         </section>
         <section aria-label="Cake (6 &times; 4) details" class="static-product-modal" id="product-details-1">
