@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="#FFEEDE" name="theme-color">
+        <meta content="Freshly baked cakes, crinkles, cookies, and sweet breads from Purrfectly Bakes in Rizal." name="description"/>
+        <title>Purrfectly Bakes | Freshly Baked with Love</title>
+        <link href="style.css" rel="stylesheet">
+        <!-- Visual -->
+    </head>
+    <body>
+        <input aria-label="Open shopping cart" class="css-switch" id="cart-open" type="checkbox">
+        <input aria-label="Open checkout" class="css-switch" id="checkout-open" type="checkbox">
+
+        <!-- TOP ANNOUNCEMENT BAR: short store update shown above the navigation. -->
+
+        <div class="top-header">
+            <h1>&bull; Fresh Daily Bakes in Angono &amp; Binangonan ✨</h1>
+        </div>
+
+        <!-- MAIN HEADER: brand logo, navigation links, social icons, cart, and login. -->
+
+        <header class="mid-header" id="home">
+            <div class="Brand">
+                <a href="#home"><img alt="Purrfectly Bakes Logo" class="logo" src="pictures\Logo.jpg"></a>
+                <h1><a href="#home">Purrfectly Bakes</a></h1>
+            </div>
+            <nav aria-label="Main navigation">
+                <a href="#menu-section">Cakes &amp; Bakes</a>
+                <a href="#Menu">Menu</a>
+                <a href="#maps">Find Us</a>
+            </nav>
+            <div class="header-actions">
+                <div class="header-icons">
+                    <a aria-label="Instagram" href="https://www.instagram.com/purrfectlybakes_" rel="noopener noreferrer" target="_blank"><img alt="" src="pictures/instagram.jpg"></a>
+                    <a aria-label="View bakery photos" href="#image"><img alt="" src="pictures/camera.jpg"></a>
+                    <a aria-label="Contact us" href="#contact"><img alt="" src="pictures/Contact.jpg"></a>
+                </div>
+                <label class="cart-trigger" for="cart-open">
+                    🛒 My Cart
+                    <span>(0)</span>
+                </label>
+                <!-- LOGIN BUTTON -->
+                <div class="Login">
+                    <a href="#login">Login</a>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <!-- HERO SECTION: introduces the bakery and highlights its main features. -->
+
+            <section class="Content">
+                <div class="CContent">
+                    <p class="eyebrow">BAKED FRESH &bull; MADE WITH LOVE</p>
+                    <h1>Purrfectly Bakes</h1>
+                    <h2>Purrfect in every bite</h2>
+                    <p>Handcrafted artisan sourdough, buttery flaky croissants, decadent celebration cakes, and melt-in-your-mouth pastries baked fresh daily in the heart of Rizal.</p>
+                    <div class="Content-features">
+                        <div class="feature">
+                            <span>◷</span>
+                            <div>
+                                <small>Fresh Daily Batches</small>
+                                <h4>Small Batch Craft</h4>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span>♧</span>
+                            <div>
+                                <small>Lalamove /</small>
+                                <h4>Self Pick-up</h4>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span>&target;</span>
+                            <div>
+                                <small>Location</small>
+                                <h4>Angono Rizal</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="Content-button" href="#menu-section">
+                        Explore Our Bakes
+                        <span>&rarr;</span>
+                    </a>
+                </div>
+                <div aria-label="Purrfectly Bakes featured products" class="Content-image" id="image">
+                    <div class="slides">
+                        <div class="slide">
+                            <img alt="Featured cake" src="pictures/Banner.jpg">
+                        </div>
+                        <div class="slide">
+                            <img alt="Fresh pastries" src="pictures/Banners.jpg">
+                        </div>
+                        <div class="slide">
+                            <img alt="Cookies and treats" src="pictures/Bannerss.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRODUCT CATEGORY 1: celebration cakes and cupcakes. -->
+
+            <section class="menu-section catalog-section" id="menu-section">
+                <div class="section-heading">
+                    <p class="eyebrow">MADE TO MAKE YOU SMILE</p>
+                    <h2>Our Cakes</h2>
+                    <p>Celebrate life's sweetest moments with our freshly made cakes.</p>
+                </div>
+                <div class="product-container">
+                    <article class="product-card" data-description="Our classic celebration cake. Price starts at ₱879; final pricing may depend on design and customization." data-name="Cake (6 &times; 4)" data-price="879">
+                        <div class="product-image">
+                            <img alt="Cake 6 by 4" src="pictures/Cakes/6x4.png">
+                        </div>
+                        <div class="product-info">
+                            <h3>Cake (6 &times; 4)</h3>
+                            <p>Price starts at</p>
+                            <h4>₱879</h4>
+                            <a class="add-button" href="#product-details-1">View Details</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-description="A bigger celebration cake for sharing. Price starts at ₱1,199; final pricing may depend on design and customization." data-name="Cake (7 &times; 4)" data-price="1199">
+                        <div class="product-image">
+                            <img alt="Cake 7 by 4" src="pictures/Cakes/7x4.png">
+                        </div>
+                        <div class="product-info">
+                            <h3>Cake (7 &times; 4)</h3>
+                            <p>Price starts at</p>
+                            <h4>₱1,199</h4>
+                            <a class="add-button" href="#product-details-2">View Details</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-description="A petite cake that's perfect for intimate celebrations and sweet surprises." data-name="Bento Cake" data-price="349">
+                        <div class="product-image">
+                            <img alt="Bento Cake" src="pictures/Cakes/Bento.png">
+                        </div>
+                        <div class="product-info">
+                            <h3>Bento Cake</h3>
+                            <p>Price starts at</p>
+                            <h4>₱349</h4>
+                            <a class="add-button" href="#product-details-3">View Details</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-description="A dozen freshly made cupcakes, perfect for sharing." data-name="1 Dozen Cupcakes (3oz)" data-price="799">
+                        <div class="product-image">
+                            <img alt="A dozen cupcakes" src="pictures/Cakes/dozen.jpg">
+                        </div>
+                        <div class="product-info">
+                            <h3>1 Dozen Cupcakes (3oz)</h3>
+                            <p>Price starts at</p>
+                            <h4>₱799</h4>
+                            <a class="add-button" href="#product-details-4">View Details</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- PRODUCT CATEGORY 2: crinkles with cream cheese. -->
+
+            <section class="menu-section catalog-section alt-section" id="Menu">
+                <div class="section-heading">
+                    <p class="eyebrow">SOFT, FUDGY &amp; DELICIOUS</p>
+                    <h2>Crinkles w/ Creamcheese</h2>
+                    <p>Rich crinkles made for your sweet cravings.</p>
+                </div>
+                <div class="product-container">
+                    <article class="product-card" data-description="Rich chocolate crinkles with creamcheese. Sold per loaf." data-name="Chocolate Crinkles" data-price="175">
+                        <div class="product-image">
+                            <img alt="Chocolate Crinkles" src="pictures/Crinkles/Dipdak.jpg">
+                        </div>
+                        <div class="product-info">
+                            <h3>Chocolate Crinkles</h3>
+                            <p>Per loaf</p>
+                            <h4>₱175</h4>
+                            <a class="add-button" href="#product-details-5">View Details</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-description="Soft red velvet crinkles with creamcheese. Sold per loaf." data-name="Red Velvet Crinkles" data-price="210">
+                        <div class="product-image">
+                            <img alt="Red Velvet Crinkles" src="pictures/Crinkles/Velveit.jpg">
+                        </div>
+                        <div class="product-info">
+                            <h3>Red Velvet Crinkles</h3>
+                            <p>Per loaf</p>
+                            <h4>₱210</h4>
+                            <a class="add-button" href="#product-details-6">View Details</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-description="Ube-flavored crinkles with creamcheese. Sold per loaf." data-name="Ube Crinkles" data-price="185">
+                        <div class="product-image">
+                            <img alt="Ube Crinkles" src="pictures/Crinkles/ubers.jpg">
+                        </div>
+                        <div class="product-info">
+                            <h3>Ube Crinkles</h3>
+                            <p>Per loaf</p>
+                            <h4>₱185</h4>
+                            <a class="add-button" href="#product-details-7">View Details</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-description="Matcha crinkles with creamcheese. Sold per loaf." data-name="Matcha Crinkles" data-price="235">
+                        <div class="product-image">
+                            <img alt="Matcha Crinkles" src="pictures/Crinkles/Matcho.jpg">
+                        </div>
+                        <div class="product-info">
+                            <h3>Matcha Crinkles</h3>
+                            <p>Per loaf</p>
+                            <h4>₱235</h4>
+                            <a class="add-button" href="#product-details-8">View Details</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- PRODUCT CATEGORY 3: cookies and other sweet treats. -->
+
+            <section class="menu-section catalog-section" id="treats">
+                <div class="section-heading">
+                    <p class="eyebrow">A LITTLE SOMETHING SWEET</p>
+                    <h2>Cookies &amp; Treats</h2>
+                    <p>Delightful treats for your everyday snack break.</p>
+                </div>
+                <div class="product-container">
+                    <article class="product-card" data-description="Chocolate cookies with walnuts. Box of 4." data-name="Walnut Chocolate Cookies" data-price="210">
+                        <div class="product-image">
+                            <img alt="Walnut Chocolate Cookies" src="pictures/Corkies/Nutts.jpg"/>
+                        </div>
+                        <div class="product-info">
+                            <h3>Walnut Chocolate Cookies</h3>
+                            <p>Box of 4</p>
+                            <h4>₱210</h4>
+                            <a class="add-button" href="#product-details-9">View Details</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-description="Oreo red velvet cookies. Box of 4." data-name="Oreo Redvelvet Cookies" data-price="210">
+                        <div class="product-image">
+                            <img alt="Oreo Redvelvet Cookies" src="pictures/Corkies/Orie.jpg"/>
+                        </div>
+                        <div class="product-info">
+                            <h3>Oreo Redvelvet Cookies</h3>
+                            <p>Box of 4</p>
+                            <h4>₱210</h4>
+                            <a class="add-button" href="#product-details-10">View Details</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-description="Rich chocolate brownies. Sold per order." data-name="Chocolate Brownies" data-price="210">
+                        <div class="product-image">
+                            <img alt="Chocolate Brownies" src="pictures/Corkies/Brownd.jpg"/>
+                        </div>
+                        <div class="product-info">
+                            <h3>Chocolate Brownies</h3>
+                            <p>Per order</p>
+                            <h4>₱210</h4>
+                            <a class="add-button" href="#product-details-11">View Details</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-description="Classic tiramisu dessert. Sold per tub." data-name="Classic Tiramisu" data-price="180">
+                        <div class="product-image">
+                            <img alt="Classic Tiramisu" src="pictures/Corkies/clas.jpg">
+                        </div>
+                        <div class="product-info">
+                            <h3>Classic Tiramisu</h3>
+                            <p>Per tub</p>
+                            <h4>₱180</h4>
+                            <a class="add-button" href="#product-details-12">View Details</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- PRODUCT CATEGORY 4: freshly baked sweet breads. -->
+
+            <section class="menu-section catalog-section alt-section" id="sweet-breads">
+                <div class="section-heading">
+                    <p class="eyebrow">FRESH FROM OUR OVEN</p>
+                    <h2>Sweet Breads</h2>
+                    <p>Comforting baked favorites for any time of day.</p>
+                </div>
+                <div class="product-container">
+                    <article class="product-card" data-description="Moist and comforting banana loaf. Sold per loaf." data-name="Banana Loaf" data-price="180">
+                        <div class="product-image">
+                            <img alt="Banana Loaf" src="pictures/Breads/loaf.jpg"/>
+                        </div>
+                        <div class="product-info">
+                            <h3>Banana Loaf</h3>
+                            <p>Per loaf</p>
+                            <h4>₱180</h4>
+                            <a class="add-button" href="#product-details-13">View Details</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-description="Sweet cinnamon bread. Sold per loaf." data-name="Cinnamon Roll" data-price="180">
+                        <div class="product-image">
+                            <img alt="Cinnamon Roll" src="pictures/Breads/Cin.jpg">
+                        </div>
+                        <div class="product-info">
+                            <h3>Cinnamon Roll</h3>
+                            <p>Per loaf</p>
+                            <h4>₱180</h4>
+                            <a class="add-button" href="#product-details-14">View Details</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-description="Soft ensymada topped with creamcheese. Sold per loaf." data-name="Creamcheese Ensymada" data-price="250">
+                        <div class="product-image">
+                            <img alt="Creamcheese Ensymada" src="pictures/Breads/Plain.jpg">
+                        </div>
+                        <div class="product-info">
+                            <h3>Creamcheese Ensymada</h3>
+                            <p>Per loaf</p>
+                            <h4>₱250</h4>
+                            <a class="add-button" href="#product-details-15">View Details</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-description="Ube ensymada topped with creamcheese. Sold per loaf." data-name="Ube Creamcheese Ensymada" data-price="270">
+                        <div class="product-image">
+                            <img alt="Ube Creamcheese Ensymada" src="pictures/Breads/Ubier.jpg">
+                        </div>
+                        <div class="product-info">
+                            <h3>Ube Creamcheese Ensymada</h3>
+                            <p>Per loaf</p>
+                            <h4>₱270</h4>
+                            <a class="add-button" href="#product-details-16">View Details</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- LOCATION SECTION: store information and embedded Google Map. -->
+
+            <section class="store-section" id="maps">
+                <div class="store-info">
+                    <p class="eyebrow">COME SAY HELLO</p>
+                    <h2>Find Us at our Pop-Up Store</h2>
+                    <p>Visit us at Aurora Overlooking, near Vista Cafe in Angono, Rizal. Our pop-up store is located in a scenic and accessible area, making it a great place to stop by and explore. You can use Google Maps for directions and to find the exact location. We look forward to seeing you!</p>
+                    <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Aurora+Overlooking+Angono+Rizal" rel="noopener noreferrer" target="_blank">Get directions &nearrow;</a>
+                </div>
+                <div class="map-container">
+                    <iframe loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15448.230544791286!2d121.14919506479725!3d14.53869587504413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c6d9e2934acf%3A0x7d5acda3dcf02e4a!2sAngono%2C%201930%20Rizal!5e0!3m2!1sen!2sph!4v1792899630427!5m2!1sen!2sph" title="Purrfectly Bakes Store Location">
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- ABOUT US SECTION: the story behind the Purrfectly Bakes name. -->
+
+            <section class="StoryContent" id="about">
+                <div class="StoryDetails">
+                    <p class="eyebrow">THE PEOPLE BEHIND THE BAKES</p>
+                    <h2>Our Purrfect Story</h2>
+                    <p>Purrfectly Bakes was inspired by us, the fur moms behind the business! I'm a proud dog lover, while my business partner is a cat lover. Our love for our furry companions inspired us to create the name "Purrfectly Bakes," reflecting our personalities and passion for baking.</p>
+                    <p>The business originally started as a college entrepreneurship project. We began with just one product: banana loaf. At first, it was only a side hustle while we were studying and exploring our passion for baking.</p>
+                    <p>Last year, we decided to take a big risk and turn our small side business into a full-time venture. Thankfully, Purrfectly Bakes is still running today! We're grateful for the journey, the support, and every customer who has been part of our story. We hope to continue growing and sharing our baked goods with more people! 🐶🐱💗</p>
+                </div>
+                <div class="StoryImages">
+                    <img alt="Owner's dogs" src="pictures/dog1.jpg"/>
+                    <img alt="Business partner's cats" src="pictures/cat1.jpg"/>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION: directs customers to the bakery Instagram page. -->
+
+            <section class="contact-section" id="contact">
+                <p class="eyebrow">WE'D LOVE TO HEAR FROM YOU</p>
+                <h2>Have a sweet question?</h2>
+                <p>Message us on Instagram for inquiries, product details, and orders.</p>
+                <a href="https://www.instagram.com/purrfectlybakes" rel="noopener noreferrer" target="_blank">Visit Our Instagram &nearrow;</a>
+            </section>
+        </main>
+        <section aria-label="Shopping cart" class="static-cart-panel">
+            <label aria-label="Close cart" class="static-overlay" for="cart-open">
+            </label>
+            <div class="static-cart-dialog">
+                <div class="static-cart-heading">
+                    <div>
+                        <p class="eyebrow">YOUR SWEET SELECTION</p>
+                        <h2>My Cart</h2>
+                    </div>
+                    <label aria-label="Close cart" class="static-modal-close" for="cart-open">&times;</label>
+                </div>
+                <div class="static-empty-cart">
+                    <span class="empty-cart-icon">🛒</span>
+                    <h3>Your cart is currently empty.</h3>
+                </div>
+                <div class="static-cart-total">
+                    <span>Subtotal</span>
+                    <strong>₱0.00</strong>
+                </div>
+                <label class="primary-button static-checkout-trigger" for="checkout-open">Continue to Checkout</label>
+            </div>
+        </section>
+        <section aria-label="Checkout form" class="static-checkout-panel">
+            <label aria-label="Close checkout" class="static-overlay checkout-overlay" for="checkout-open">
+            </label>
+            <div class="static-checkout-dialog">
+                <label aria-label="Close checkout" class="static-modal-close" for="checkout-open">&times;</label>
+                <p class="eyebrow">ALMOST THERE!</p>
+                <h2>Complete Your Order</h2>
+                <p class="checkout-intro">Please provide your details so the shop can review your order inquiry.</p>
+                <form action="#checkout-open" class="static-checkout-form" method="get">
+                    <div class="checkout-section">
+                        <h3>1. Customer Information</h3>
+                        <div class="checkout-grid">
+                            <label>
+                                Full Name *
+                                <input autocomplete="name" name="customerName" placeholder="Your complete name" required="" type="text"/>
+                            </label>
+                            <label>
+                                Mobile Number *
+                                <input autocomplete="tel" name="customerPhone" pattern="09[0-9]{9}" placeholder="09XXXXXXXXX" required="" type="tel"/>
+                            </label>
+                            <label class="full-field">
+                                Email Address (optional)
+                                <input autocomplete="email" name="customerEmail" placeholder="you@example.com" type="email"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="checkout-section">
+                        <h3>2. Delivery Method</h3>
+                        <div class="choice-row">
+                            <label class="choice-card">
+                                <input checked="" name="fulfillment" type="radio" value="Self Pickup"/>
+                                <span>
+                                    <strong>Self Pickup</strong>
+                                    <small>Pick up your order at our agreed location.</small>
+                                </span>
+                            </label>
+                            <label class="choice-card">
+                                <input name="fulfillment" type="radio" value="Delivery"/>
+                                <span>
+                                    <strong>Delivery</strong>
+                                    <small>Have your order delivered to your address.</small>
+                                </span>
+                            </label>
+                        </div>
+                        <label class="full-field static-address-label">
+                            Complete Delivery Address
+                            <textarea name="address" placeholder="House/Unit No., Street, Barangay, City/Municipality" rows="2"></textarea>
+                        </label>
+                    </div>
+                    <div class="checkout-section">
+                        <h3>3. Preferred Schedule</h3>
+                        <div class="checkout-grid">
+                            <label>
+                                Preferred Date *
+                                <input name="orderDate" required="" type="date"/>
+                            </label>
+                            <label>
+                                Preferred Time *
+                                <select name="orderTime" required="">
+                                    <option value="">
+                                        Choose a time
+                                    </option>
+                                    <option>
+                                        9:00 AM &ndash; 11:00 AM
+                                    </option>
+                                    <option>
+                                        11:00 AM &ndash; 1:00 PM
+                                    </option>
+                                    <option>
+                                        1:00 PM &ndash; 3:00 PM
+                                    </option>
+                                    <option>
+                                        3:00 PM &ndash; 5:00 PM
+                                    </option>
+                                    <option>
+                                        5:00 PM &ndash; 7:00 PM
+                                    </option>
+                                </select>
+                            </label>
+                        </div>
+                        <small class="checkout-hint">Your requested schedule is subject to availability. The shop must confirm it through Instagram.</small>
+                    </div>
+                    <div class="checkout-section">
+                        <h3>4. Payment Method</h3>
+                        <div class="payment-options">
+                            <label class="choice-card">
+                                <input name="payment" required="" type="radio" value="GCash"/>
+                                <span>
+                                    <strong>GCash</strong>
+                                    <small>E-wallet payment</small>
+                                </span>
+                            </label>
+                            <label class="choice-card">
+                                <input name="payment" type="radio" value="Maya"/>
+                                <span>
+                                    <strong>Maya</strong>
+                                    <small>E-wallet payment</small>
+                                </span>
+                            </label>
+                            <label class="choice-card">
+                                <input name="payment" type="radio" value="Cash on Pickup/Delivery"/>
+                                <span>
+                                    <strong>Cash</strong>
+                                    <small>Pay when you receive your order</small>
+                                </span>
+                            </label>
+                        </div>
+                        <p class="payment-note">For GCash or Maya, payment details will be provided after the shop confirms your order. Please do not send payment yet.</p>
+                    </div>
+                    <div class="checkout-section">
+                        <label class="full-field">
+                            Order Notes / Cake Design / Special Requests
+                            <textarea name="orderNotes" placeholder="Write your preferred flavor, design, message on cake, or other requests here." rows="3"></textarea>
+                        </label>
+                    </div>
+                    <p class="static-form-note">Static demonstration only: this form does not send or save an order.</p>
+                    <button class="primary-button" type="submit">Review My Order</button>
+                </form>
+            </div>
+        </section>
+        <section aria-label="Cake (6 &times; 4) details" class="static-product-modal" id="product-details-1">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Cake 6 by 4" src="pictures/Cakes/6x4.png"/>
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Cake (6 &times; 4)</h2>
+                    <p class="static-modal-price">₱879</p>
+                    <p>Our classic celebration cake. Price starts at ₱879; final pricing may depend on design and customization.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Cake (7 &times; 4) details" class="static-product-modal" id="product-details-2">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Cake 7 by 4" src="pictures/Cakes/7x4.png"/>
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Cake (7 &times; 4)</h2>
+                    <p class="static-modal-price">₱1199</p>
+                    <p>A bigger celebration cake for sharing. Price starts at ₱1,199; final pricing may depend on design and customization.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Bento Cake details" class="static-product-modal" id="product-details-3">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Bento Cake" src="pictures/Cakes/Bento.png"/>
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Bento Cake</h2>
+                    <p class="static-modal-price">₱349</p>
+                    <p>A petite cake that's perfect for intimate celebrations and sweet surprises.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="1 Dozen Cupcakes (3oz) details" class="static-product-modal" id="product-details-4">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="A dozen cupcakes" src="pictures/Cakes/dozen.jpg"/>
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>1 Dozen Cupcakes (3oz)</h2>
+                    <p class="static-modal-price">₱799</p>
+                    <p>A dozen freshly made cupcakes, perfect for sharing.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Chocolate Crinkles details" class="static-product-modal" id="product-details-5">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Chocolate Crinkles" src="pictures/Crinkles/Dipdak.jpg"/>
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Chocolate Crinkles</h2>
+                    <p class="static-modal-price">₱175</p>
+                    <p>Rich chocolate crinkles with creamcheese. Sold per loaf.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Red Velvet Crinkles details" class="static-product-modal" id="product-details-6">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Red Velvet Crinkles" src="pictures/Crinkles/Velveit.jpg"/>
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Red Velvet Crinkles</h2>
+                    <p class="static-modal-price">₱210</p>
+                    <p>Soft red velvet crinkles with creamcheese. Sold per loaf.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Ube Crinkles details" class="static-product-modal" id="product-details-7">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Ube Crinkles" src="pictures/Crinkles/ubers.jpg"/>
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Ube Crinkles</h2>
+                    <p class="static-modal-price">₱185</p>
+                    <p>Ube-flavored crinkles with creamcheese. Sold per loaf.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Matcha Crinkles details" class="static-product-modal" id="product-details-8">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Matcha Crinkles" src="pictures/Crinkles/Matcho.jpg"/>
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Matcha Crinkles</h2>
+                    <p class="static-modal-price">₱235</p>
+                    <p>Matcha crinkles with creamcheese. Sold per loaf.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Walnut Chocolate Cookies details" class="static-product-modal" id="product-details-9">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Walnut Chocolate Cookies" src="pictures/Corkies/Nutts.jpg">
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Walnut Chocolate Cookies</h2>
+                    <p class="static-modal-price">₱210</p>
+                    <p>Chocolate cookies with walnuts. Box of 4.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Oreo Redvelvet Cookies details" class="static-product-modal" id="product-details-10">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Oreo Redvelvet Cookies" src="pictures/Corkies/Orie.jpg">
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Oreo Redvelvet Cookies</h2>
+                    <p class="static-modal-price">₱210</p>
+                    <p>Oreo red velvet cookies. Box of 4.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Chocolate Brownies details" class="static-product-modal" id="product-details-11">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Chocolate Brownies" src="pictures/Corkies/Brownd.jpg">
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Chocolate Brownies</h2>
+                    <p class="static-modal-price">₱210</p>
+                    <p>Rich chocolate brownies. Sold per order.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Classic Tiramisu details" class="static-product-modal" id="product-details-12">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Classic Tiramisu" src="pictures/Corkies/clas.jpg">
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Classic Tiramisu</h2>
+                    <p class="static-modal-price">₱180</p>
+                    <p>Classic tiramisu dessert. Sold per tub.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Banana Loaf details" class="static-product-modal" id="product-details-13">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Banana Loaf" src="pictures/Breads/loaf.jpg">
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Banana Loaf</h2>
+                    <p class="static-modal-price">₱180</p>
+                    <p>Moist and comforting banana loaf. Sold per loaf.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Cinnamon Roll details" class="static-product-modal" id="product-details-14">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Cinnamon Roll" src="pictures/Breads/Cin.jpg">
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Cinnamon Roll</h2>
+                    <p class="static-modal-price">₱180</p>
+                    <p>Sweet cinnamon bread. Sold per loaf.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Creamcheese Ensymada details" class="static-product-modal" id="product-details-15">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Creamcheese Ensymada" src="pictures/Breads/Plain.jpg">
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Creamcheese Ensymada</h2>
+                    <p class="static-modal-price">₱250</p>
+                    <p>Soft ensymada topped with creamcheese. Sold per loaf.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+        <section aria-label="Ube Creamcheese Ensymada details" class="static-product-modal" id="product-details-16">
+            <a aria-label="Close product details" class="static-modal-backdrop" href="#menu-section">
+            </a>
+            <div class="static-product-dialog">
+                <a aria-label="Close" class="static-modal-close" href="#menu-section">&times;</a>
+                <img alt="Ube Creamcheese Ensymada" src="pictures/Breads/Ubier.jpg"/>
+                <div>
+                    <p class="eyebrow">PURRFECTLY BAKES</p>
+                    <h2>Ube Creamcheese Ensymada</h2>
+                    <p class="static-modal-price">₱270</p>
+                    <p>Ube ensymada topped with creamcheese. Sold per loaf.</p>
+                    <p class="static-modal-note">For ingredients and allergen information, please message us on Instagram.</p>
+                    <a class="primary-button static-close-link" href="#menu-section">Back to Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER: compact brand details and pop-up store schedule. -->
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div>
+                    <h3 class="footer-logo">
+                        <span class="paw">🐾</span>
+                        Purrfectly Bakes
+                    </h3>
+                    <p class="footer-description">Freshly baked happiness, made with love. From celebration cakes to your favorite sweet treats, every bite is baked to make your day purrfect!</p>
+                    <div class="footer-location">
+                        <span class="store-icon">&target;</span>
+                        <span>Angono &amp; Binangonan, Rizal</span>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3>Pop-up Store Hours</h3>
+                    <p class="footer-days">Friday - Sunday</p>
+                    <p class="footer-time">6:00 PM - 12:00 AM</p>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Purrfectly Bakes. Baked with love. 🐾</p>
+        </footer>
+
+
+        <!-- ACCOUNT POPUPS: CSS :target opens these panels without JavaScript. -->
+        <!-- ================= LOGIN ================= -->
+
+
+        <div class="account-modal" id="login">
+            <div class="account-content">
+                <img alt="Purrfectly Bakes Logo" class="account-logo" src="pictures/logo.jpg">
+                <h2>Welcome Back!</h2>
+                <form action="#Welcome">
+                    <div class="account-input-group">
+                        <input id="login-email" required="" type="email">
+                        <label for="login-email">Email*</label>
+                    </div>
+                    <div class="account-input-group">
+                        <input id="login-password" required="" type="password">
+                        <label for="login-password">Password*</label>
+                    </div>
+                    <button class="account-yellow-button" type="submit">LOG IN</button>
+                </form>
+                <a aria-label="Close login" class="account-close" href="#">&times;</a>
+                <p class="account-terms">
+                    By continuing, you agree to our Terms of Service and Privacy Policy.
+                    <br/>
+                    New here?
+                    <a href="#signin">Create Account</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- LOGIN WELCOME -->
+
+        <div class="account-welcome" id="Welcome">
+            <div class="account-welcome-content">
+                <h1>Welcome Back!</h1>
+                <p>We are happy to see you again!</p>
+                <a aria-label="Close welcome" class="account-close" href="#">&times;</a>
+            </div>
+        </div>
+
+        <!-- ================= SIGN IN ================= -->
+
+        <div class="account-modal" id="signin">
+            <div class="account-content">
+                <img alt="Purrfectly Bakes Logo" class="account-logo" src="pictures/logo.jpg"/>
+                <h2>Create Account</h2>
+                <form action="#welcome">
+                    <div class="account-input-group">
+                        <input id="signup-firstname" required="" type="text"/>
+                        <label for="signup-firstname">Firstname</label>
+                    </div>
+                    <div class="account-input-group">
+                        <input id="signup-lastname" required="" type="text"/>
+                        <label for="signup-lastname">Lastname</label>
+                    </div>
+                    <div class="account-input-group">
+                        <input id="signup-email" required="" type="email"/>
+                        <label for="signup-email">Email*</label>
+                    </div>
+                    <div class="account-input-group">
+                        <input id="signup-password" required="" type="password"/>
+                        <label for="signup-password">Password*</label>
+                    </div>
+                    <button class="account-yellow-button" type="submit">SIGN IN</button>
+                </form>
+                <a aria-label="Close sign in" class="account-close" href="#">&times;</a>
+                <p class="account-terms">By continuing, you agree to our Terms of Service and Privacy Policy.</p>
+                <p class="account-switch">
+                    Already have an account?
+                    <a href="#login">Log In</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- SIGN IN WELCOME -->
+
+        <div class="account-welcome" id="welcome">
+            <div class="account-welcome-content">
+                <h1>Welcome!</h1>
+                <p>Are you ready to select your own Purrfectly Bakes?</p>
+                <a aria-label="Close welcome" class="account-close" href="#">&times;</a>
+            </div>
+        </div>
+
+    </body>
+</html>
