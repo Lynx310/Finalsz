@@ -916,6 +916,7 @@ nav a:hover { color: var(--accent); }
     font-family: Georgia, serif;
 }
 .static-modal-close {
+    
     display: grid;
     place-items: center;
     width: 36px;
